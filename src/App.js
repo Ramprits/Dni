@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import { Button } from "reactstrap";
-import "./App.css";
+
+// Import Components helpers..
+import Header from "./components/UI/Header";
 
 class App extends Component {
+  primary = "btn btn-primary";
   render() {
     return (
       <div className="App">
-        <Button color="primary">primary</Button>
+        <Header />
+        <div className="container mt-3">
+        <Button color="primary" size="sm">Primary</Button>
+        </div>
       </div>
     );
   }
