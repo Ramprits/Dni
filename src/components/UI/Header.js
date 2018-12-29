@@ -1,9 +1,9 @@
 import React, { Component } from "react";
+import logo from "../../assets/img/logo";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
-  NavbarBrand,
   Nav,
   NavItem,
   NavLink
@@ -28,7 +28,7 @@ export default class Header extends Component {
       <div>
         <Navbar color="primary" dark expand="xs">
           <div className="container">
-            <NavbarBrand href="/">DNI</NavbarBrand>
+            <img src={logo} height={40} alt="logo" />
             <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>

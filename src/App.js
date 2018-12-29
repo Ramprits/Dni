@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Button } from "reactstrap";
-
 // Import Components helpers..
 import Header from "./components/UI/Header";
 
@@ -11,7 +10,9 @@ class App extends Component {
       <div className="App">
         <Header />
         <div className="container mt-3">
-        <Button color="primary" size="sm">Primary</Button>
+          <Button color="primary" size="sm">
+            Primary
+          </Button>
         </div>
       </div>
     );
