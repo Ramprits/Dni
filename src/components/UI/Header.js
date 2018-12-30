@@ -1,13 +1,7 @@
 import React, { Component } from "react";
+import { NavLink as RouterLink } from "react-router-dom";
 import logo from "../../assets/img/logo";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  NavLink
-} from "reactstrap";
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from "reactstrap";
 
 export default class Header extends Component {
   constructor(props) {
@@ -33,12 +27,21 @@ export default class Header extends Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="/components/">Home</NavLink>
+                  <RouterLink
+                    style={{ color: "white", marginRight: "1rem" }}
+                    activeClassName="active"
+                    to="/"
+                  >
+                    Home
+                  </RouterLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/Ramprits/guides">
+                  <RouterLink
+                    activeClassName="active"
+                    to="https://github.com/Ramprits/dni"
+                  >
                     GitHub
-                  </NavLink>
+                  </RouterLink>
                 </NavItem>
               </Nav>
             </Collapse>
