@@ -33,7 +33,7 @@ class Fruits extends Component {
             <CardText>Price ${price}</CardText>
             <CardText>{this.state.showInfo ? description : ""}</CardText>
             <Button color="primary" size="sm" onClick={this.handleInfo}>
-              {"more"}
+              {"Info"}
             </Button>
           </CardBody>
         </Card>
