@@ -1,20 +1,20 @@
 import React, { Component } from "react";
-import { Button } from "reactstrap";
+import { BrowserRouter, Route } from "react-router-dom";
 // Import Components helpers..
 import Header from "./components/UI/Header";
-
+import Fruits from "./components/fruits";
 class App extends Component {
   primary = "btn btn-primary";
   render() {
     return (
-      <div className="App">
-        <Header />
-        <div className="container mt-3">
-          <Button color="primary" size="sm">
-            Primary
-          </Button>
+      <BrowserRouter>
+        <div className="App">
+          <Header />
+          <div className="container mt-3">
+            <Route exact path="/" component={Fruits} />
+          </div>
         </div>
-      </div>
+      </BrowserRouter>
     );
   }
 }

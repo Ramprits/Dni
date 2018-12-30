@@ -1,0 +1,26 @@
+.delete {
+  position: absolute;
+  margin-left: 20rem;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .delete {
+    position: absolute;
+    margin-left: 35rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .delete {
+    position: absolute;
+    margin-left: 30rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .delete {
+    position: absolute;
+    margin-left: 20rem;
+    font-size: 1.5rem;
+  }
+}
